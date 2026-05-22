@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Header & Navigation -->
+    <header id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">My<span>Portfolio</span></a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-content">
+            <h1>Hi, I'm <span class="highlight">Premananda</span></h1>
+            <h2>Web Developer</h2>
+            <p>I build modern, responsive, and visually appealing web applications. Passionate about coding and creating great user experiences.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hello! I'm an enthusiastic web developer focused on crafting clean and user-friendly experiences. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+                    <p>My journey in web development started with a curiosity for how things work on the internet, and it has evolved into a passion for building functional and aesthetically pleasing websites. I am constantly learning and exploring new technologies to improve my skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML5</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3>CSS3</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Responsive Design</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <h2 class="section-title">Recent Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #2c3e50; height: 200px; display: flex; align-items: center; justify-content: center; color: #fff;">
+                        <span>Project Image Placeholder</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Interactive Web Game</h3>
+                        <p>A fun and interactive browser-based game built with HTML, CSS, and vanilla JavaScript.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-color: #34495e; height: 200px; display: flex; align-items: center; justify-content: center; color: #fff;">
+                        <span>Project Image Placeholder</span>
+                    </div>
+                    <div class="project-info">
+                        <h3>Landing Page</h3>
+                        <p>A modern, responsive landing page demonstrating modern CSS layout techniques like Flexbox and Grid.</p>
+                        <div class="project-links">
+                            <a href="#" class="btn btn-small">Live Demo</a>
+                            <a href="#" class="btn btn-small btn-outline">Source Code</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image" style="background-image: url('Screenshot%202026-05-16%20203905.png'); background-size: cover; background-position: center; height: 200px;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Neon Runner</h3>
+                        <p>An arcade speed game where you race the city grid, unlock tracks, and chase clean runs through fast obstacle lanes.</p>
+                        <div class="project-links">
+                            <a href="index.html" class="btn btn-small">Live Demo</a>
+                            <a href="https://neon-runner-brown.vercel.app/" class="btn btn-small btn-outline" target="_blank" rel="noopener noreferrer">Game Features</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section-padding bg-alt">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>Have a project in mind or just want to say hi? Feel free to reach out!</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Form submitted! (This is a UI demo)');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>&copy; 2026 Premananda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
